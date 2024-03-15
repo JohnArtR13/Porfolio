@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Developer Located in Cebu"
+    />
+    <title>Bruno | Portfolio</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h1 id="logo">Art</h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#scholar">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <main class="intro container">
+      <img src="./img/profile.jpg" alt="Gray Wolf" width="360" height="520" />
+      <div>
+        <h1>
+          Front End Developer<br />
+          
+        </h1>
+        <p>Located in Cebu 🌃</p>
+      </div>
+    </main>
+    <section
+      id="experience"
+      aria-label="Experience"
+      class="experience container"
+    >
+      <h2 class="subtitle">Experience</h2>
+      <div>
+        <p class="experience-text">
+          I develop small projects using only <strong>HTML</strong>,
+          <strong>CSS</strong>, and <strong>Javascript</strong> or using
+          frameworks like <strong>React</strong>. Currently focusing on frontend,
+          but studying to become a fullstack software engineer in the future.
+        </p>
+        <div class="work">
+          <span class="work-year">2021</span>
+          <h3 class="work-title">Bikcraft</h3>
+          <span class="work-title">Junior Developer</span>
+          <p class="work-text">
+            In the Bikcraft project, I worked on the complete development of the
+            HTML, CSS, and Javascript of the website, as well as the deployment
+            process to production.
+          </p>
+          <ul class="work-skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <div class="work">
+          <span class="work-year">2022</span>
+          <h3 class="work-title">Ignite</h3>
+          <span class="work-title">Senior Developer</span>
+          <p class="work-text">
+            I worked on the development of various web projects using the
+            React framework and mobile projects using React Native.
+          </p>
+          <ul class="work-skills">
+            <li>React</li>
+            <li>React Native</li>
+            <li>Typescript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="scholar" aria-label="Education" class="scholar">
+      <div class="scholar-wrapper container">
+        <h2 class="subtitle">Education</h2>
+        <div>
+          <p class="scholar-text">
+            My most recent academic experience was the specialization course in
+            <strong>React</strong> at Rocketseat. Additionally, I am in constant
+            learning with online courses and bootcamps.
+          </p>
+          <ul class="scholar-list">
+            <li class="scholar-item">
+              <span class="scholar-title">Bachelor's Degree</span>
+              <h3 class="scholar-course">Computer Engineering</h3>
+              <span class="scholar-institution">CITE</span>
+            </li>
+            <li class="scholar-item">
+              <span class="scholar-title">Online Course</span>
+              <h3 class="scholar-course">Complete Web Design</h3>
+              <span class="scholar-institution">Origamid</span>
+            </li>
+            <li class="scholar-item">
+              <span class="scholar-title">Specialization Course</span>
+              <h3 class="scholar-course">ReactJS</h3>
+              <span class="scholar-institution">Webschool</span>
+            </li>
+          </ul>
+          <div class="scholar-extra">
+            <div class="courses">
+              <h3>Bootcamps</h3>
+              <ul>
+                <li>NLW <span>12h</span></li>
+                <li>Ignite Lab <span>6h</span></li>
+              </ul>
+            </div>
+            <div class="languages">
+              <h3>Languages</h3>
+              <ul>
+                <li>English <span>/Advanced</span></li>
+                <li>Portuguese <span>/Fluent</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="footer">
+      <div class="footer-wrapper container">
+        <p class="footer-text">
+          I'm available for new projects. Contact me and let's have a chat 👋
+        </p>
+        <ul class="footer-contact">
+          <li><a href="https://gmail.com">sarejohn77@email.com</a></li>
+          <li><a href="https://facebook.com">Johnart@facebook.com</a></li>
+          <li>+55 11 9999-9999</li>
+        </ul>
+        <p class="footer-copy">By Mr. Art</p>
+      </div>
+    </footer>
+    <script>
+      let logo = document.getElementById('logo')
+        logo.addEventListener('click', () => {
+          console.log(logo.style.color)
+          if (logo.style.color === 'black' || logo.style.color === '') {
+            logo.style.color = '#2d590d';
+          } else {
+            logo.style.color = 'black';
+          }
+        })
+    </script>
+  </body>
+</html>

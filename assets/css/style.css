@@ -4,3 +4,22 @@
 @import './experience.css';
 @import './scholar.css';
 @import './footer.css';
+
+
+#das {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    background-color: var(--clr-light);
+}
+
+.excelsheet {
+    height: 50rem;
+    width: 90%;
+    margin-top: 2rem;
+    border: 3px solid black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
